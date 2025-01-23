@@ -22,6 +22,9 @@
 <link rel="stylesheet" href="css/styles.css"/>
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -58,12 +61,58 @@
 <div id="#top"></div>
 <section id="home" class="page-section">
     <div class="banner-container">
-	<div style="width: 100%; height:80%; overflow hidden;">
-	  	<video class="img-fluid" autoplay loop muted  >
+	<div id="myCarousel" class="carousel slide " data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	  </ol>
+	
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active" style="width: 100%; height:90%; overflow: hidden;">
+		      
+	      <video  style="width: 100%;" class="img-fluid" autoplay loop muted >
+	        <source src="videos/GGTVideo.mp4" type="video/mp4" />
+	      </video>
+	      <div class="carousel-caption">
+	        <h3>Los Angeles</h3>
+	        <p>LA is always so much fun!</p>
+	      </div>
+	    </div>
+	
+	    <div class="item" >
+	        <video class="img-fluid" autoplay loop muted style="width: 100%; height:auto">
 	        <source src="videos/test.mp4" type="video/mp4" />
 	      </video>
-	  
-	 </div>
+	      <div class="carousel-caption">
+	        <h3>Chicago</h3>
+	        <p>Thank you, Chicago!</p>
+	      </div>
+	    </div>
+	
+	   <div class="item" >
+	        <video class="img-fluid" autoplay loop muted>
+	        <source src="videos/GGT2.mp4" type="video/mp4" />
+	      </video>
+	      <div class="carousel-caption">
+	        <h3>full size video</h3>
+	        <p>Thank you, testing!</p>
+	      </div>
+	    </div>
+	  </div>
+	
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+</div>
 	
     </div>		
 	<section class="sub-heading">
